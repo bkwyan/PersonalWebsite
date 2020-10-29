@@ -1,12 +1,14 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './NavBar.css';
+import { Link } from 'react-router-dom';
+import { Tab } from '@material-ui/core';
 
 const NavBar = () => {
     return(
         <div className='navbar'>
-            <a>Brandon Yan</a>
-            <a>Experience</a>
-            <a>Projects</a>
+            <Tab component={Link} to={'/'} label='Brandon Yan'>Brandon Yan</Tab>
+            <Tab component={Link} to={'/experience'} label='Experience'>Experience</Tab>
+            <Tab component={Link} to={'/projects'} label='Projects'></Tab>
         </div>
     );
 }
