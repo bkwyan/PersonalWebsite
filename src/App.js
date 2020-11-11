@@ -1,25 +1,19 @@
-import React, {Component, useState, useEffect} from 'react';
-import './App.css';
-import Header from './components/Header/Header.js';
-import NavBar from './components/NavBar/NavBar.js';
-import Home from './components/Home/Home.js';
-import Projects from './components/Projects/Projects.js';
-import Experience from './components/Experience/Experience.js';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import React from 'react';
+import { GlobalStyle } from './components/styles/GlobalStyle.js';
+import styled from 'styled-components/macro';
+import Home  from './pages/Home.js';
+
+const AppContainer = styled.div`
+  height: 100%;
+  min-height: 100vh;
+}`
 
 const App = () => {
   return(
-    <div className='background'>
-      <Header />
-      <NavBar />
-      <main>
-        <Switch>
-          <Route path="/" component={Home} exact />
-          <Route path="/projects" component={Projects} />
-          <Route path="/experience" component={Experience} />
-        </Switch>
-      </main>
-    </div>
+    <AppContainer>
+      <GlobalStyle />
+      <Home />
+    </AppContainer>
   );
 }
 

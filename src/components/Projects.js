@@ -1,9 +1,8 @@
 import React from 'react';
-import './Projects.css';
 
 const Projects = () => {
     return(
-        <div className='header'>
+        <div>
             <p>This will be the projects page</p>
         </div>
     );
