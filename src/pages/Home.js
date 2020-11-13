@@ -1,5 +1,5 @@
 import React from 'react';
-import NavBar from '../components/NavBar.js';
+import Tilt from 'react-tilt';
 import {
     ProfilePicture,
     ProfilePictureWrapper,
@@ -14,9 +14,10 @@ import portrait from '../images/portrait.jpg';
 const Home = () => {
     return(
         <MainContentWrapper>
-            <NavBar />
             <ProfilePictureWrapper>
-                <ProfilePicture src ={portrait} />
+                <Tilt options={{ max:25, scale: 1.05}}>
+                    <ProfilePicture src ={portrait} />
+                </Tilt>
             </ProfilePictureWrapper>
             <NameWrapper>
                 <Name>Brandon Yan</Name>

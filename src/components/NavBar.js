@@ -1,15 +1,14 @@
 import React from 'react';
 import styled from 'styled-components/macro';
 import theme  from './styles/theme.js';
-const { fontSizes, colors } = theme;
+const { fontSizes, colors, spacing} = theme;
 
 const Nav = styled.div`
-    width: 100%;
-    opacity: 1;
+    text-align: right;
+    margin: ${spacing.sm};
     a{
         color: ${colors.snow};
-        font-size: ${fontSizes.m};
-        float: right;
+        font-size: ${fontSizes.xl};
         text-decoration: none;
         padding: 14px 16px;
         &:hover{
@@ -21,9 +20,9 @@ const Nav = styled.div`
 const NavBar = () => {
     return(
         <Nav>
-            <a href='/resume'>Resume</a>
-            <a href='/projects'>Projects</a>
             <a href='/'>Home</a>
+            <a href='/projects'>Projects</a>
+            <a href='/resume'>Resume</a>
         </Nav>
     );
 }

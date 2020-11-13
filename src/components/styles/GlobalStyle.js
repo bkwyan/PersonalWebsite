@@ -69,28 +69,15 @@ export const GlobalStyle = createGlobalStyle`
         font-style: italic;
     }
 
-    html {
-        box-sizing: border-box;
-    }
-
-    *,
-    *:before,
-    *:after {
-        box-sizing: inherit;
-    }
-
     html,
     body {
         margin: 0;
-        padding: 0;
-        width: 100%;
-        max-width: 100%;
     }
 
     body {
         background-image: url(${background});
         background-size: auto;
-        min-height: 100%;
+        height: 100%;
         font-family: ${fonts.primary};
     }
 `;
