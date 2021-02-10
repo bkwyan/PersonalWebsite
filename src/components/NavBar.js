@@ -1,32 +1,48 @@
 import React from 'react';
-import styled from 'styled-components/macro';
-import theme  from './styles/theme.js';
-const { fontSizes, colors, spacing} = theme;
+import {animateScroll as scroll} from 'react-scroll';
 
-const Nav = styled.div`
-    position: fixed;
-    z-index: 9999;
-    width: 100%;
-    text-align: right;
-    margin: ${spacing.sm};
-    a{
-        color: ${colors.snow};
-        font-size: ${fontSizes.xl};
-        text-decoration: none;
-        padding: 14px 16px;
-        &:hover{
-            animation: pulse;
-            animation-duration: 2s;
-        }
-    }
-`;
+import {
+    Nav,
+    NavLogo,
+    NavMenu,
+    NavItem,
+    NavLinks,
+    NavBarContainer
+} from './styles/NavBarStyle.js';
+
+const toggleHome = () => {
+    scroll.scrollToTop();
+}
 
 const NavBar = () => {
     return(
         <Nav>
-            <a href='/'>Home</a>
-            <a href='/experiences'>Experiences</a>
-            <a href='/contact'>Contact</a>
+            <NavBarContainer>
+                <NavLogo to='/' onClick={toggleHome}>
+                    YRNYAN
+                </NavLogo>
+                <NavMenu>
+                    <NavItem>
+                        <NavLinks to='home'
+                        smoth={true} 
+                        duration={500} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}
+                        >
+                        Home</NavLinks>
+                    </NavItem>
+                    <NavItem>
+                        <NavLinks to='experiences'
+                        smoth={true} 
+                        duration={500} 
+                        spy={true} 
+                        exact='true' 
+                        offset={-80}
+                        >Experiences</NavLinks>
+                    </NavItem>
+                </NavMenu>
+            </NavBarContainer>
         </Nav>
     );
 }

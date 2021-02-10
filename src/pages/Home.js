@@ -13,7 +13,7 @@ import portrait from '../images/portrait.jpg';
 
 const Home = () => {
     return(
-        <HomeContentWrapper>
+        <HomeContentWrapper id='home'>
             <ProfilePictureWrapper>
                 <Tilt options={{ max:25, scale: 1.05}}>
                     <ProfilePicture src ={portrait} />

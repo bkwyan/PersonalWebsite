@@ -13,8 +13,8 @@ const AppContainer = styled.div`
 const App = () => {
   return(
     <AppContainer>
-      <NavBar />
       <GlobalStyle />
+      <NavBar />
       <Home />
       <Experience />
     </AppContainer>
