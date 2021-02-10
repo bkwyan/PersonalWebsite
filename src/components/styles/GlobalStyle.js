@@ -1,7 +1,7 @@
 import { createGlobalStyle } from 'styled-components';
 import background from '../../images/background.jpg';
 import theme from './theme';
-const { fontSizes, fonts } = theme;
+const { fontSizes, fonts, colors } = theme;
 
 export const GlobalStyle = createGlobalStyle`
     @font-face {
@@ -71,13 +71,7 @@ export const GlobalStyle = createGlobalStyle`
 
     html,
     body {
+        background-color: ${colors.raisinBlack};
         margin: 0;
-    }
-
-    body {
-        background-image: url(${background});
-        background-size: auto;
-        height: 100%;
-        font-family: ${fonts.primary};
     }
 `;

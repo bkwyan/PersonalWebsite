@@ -3,7 +3,7 @@ import Tilt from 'react-tilt';
 import {
     ProfilePicture,
     ProfilePictureWrapper,
-    MainContentWrapper,
+    HomeContentWrapper,
     NameWrapper,
     Name,
     DescriptionWrapper,
@@ -13,7 +13,7 @@ import portrait from '../images/portrait.jpg';
 
 const Home = () => {
     return(
-        <MainContentWrapper>
+        <HomeContentWrapper>
             <ProfilePictureWrapper>
                 <Tilt options={{ max:25, scale: 1.05}}>
                     <ProfilePicture src ={portrait} />
@@ -25,7 +25,7 @@ const Home = () => {
             <DescriptionWrapper>
                 <Description>Software Engineer at Western University</Description>
             </DescriptionWrapper>
-        </MainContentWrapper>
+        </HomeContentWrapper>
     )
 };
 

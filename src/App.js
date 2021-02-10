@@ -3,6 +3,7 @@ import { GlobalStyle } from './components/styles/GlobalStyle.js';
 import styled from 'styled-components/macro';
 import Home  from './pages/Home.js';
 import NavBar from './components/NavBar.js';
+import Experience from './pages/Experience.js';
 
 const AppContainer = styled.div`
   display: flex;
@@ -12,9 +13,10 @@ const AppContainer = styled.div`
 const App = () => {
   return(
     <AppContainer>
-      <GlobalStyle />
       <NavBar />
+      <GlobalStyle />
       <Home />
+      <Experience />
     </AppContainer>
   );
 }
