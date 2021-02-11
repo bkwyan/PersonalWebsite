@@ -22,7 +22,7 @@ const Experience = () => {
                 <IBMDescriptionWrapper>
                     <IBMHeader>IBM</IBMHeader>
                     <IBMTitle>Front-End Web Developer</IBMTitle>
-                    <IBMDescription>${loremIpsum}</IBMDescription>
+                    <IBMDescription>{loremIpsum}</IBMDescription>
                 </IBMDescriptionWrapper>
                 <IBMImageWrapper>
                     <IBMImage src={ibmImage}/>

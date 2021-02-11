@@ -24,7 +24,7 @@ const NavBar = () => {
                 <NavMenu>
                     <NavItem>
                         <NavLinks to='home'
-                        smoth={true} 
+                        smooth={true} 
                         duration={500} 
                         spy={true} 
                         exact='true' 
@@ -34,7 +34,7 @@ const NavBar = () => {
                     </NavItem>
                     <NavItem>
                         <NavLinks to='experiences'
-                        smoth={true} 
+                        smooth={true} 
                         duration={500} 
                         spy={true} 
                         exact='true' 
