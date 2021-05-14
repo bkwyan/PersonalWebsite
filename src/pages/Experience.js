@@ -1,34 +1,42 @@
 import React from 'react';
 import {
-    ExperienceContentWrapper,
-    ExperienceHeader,
-    IBMContentWrapper,
-    IBMDescriptionWrapper,
-    IBMImage,
-    IBMImageWrapper,
-    IBMTitle,
-    IBMHeader, 
-    IBMDescription,
+    ContentContainer,
+    ContentWrapper,
+    InfoRow,
+    Column1,
+    Column2,
+    TextWrapper,
+    TopLine,
+    Heading,
+    Subtitle,
+    LearnMore,
+    ImageWrapper,
+    Image
 } from '../components/styles/ExperienceStyle.js';
+
 import ibmImage from '../images/ibm.png';
 
-const loremIpsum = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.";
-
-const Experience = () => {
+const Experience = ({lightBg, id, imgStart, topLine, lightText, headline, darkText, description, img, alt}) => {
     return(
-        <ExperienceContentWrapper id='experiences'>
-            <ExperienceHeader>Experience</ExperienceHeader>
-            <IBMContentWrapper>
-                <IBMDescriptionWrapper>
-                    <IBMHeader>IBM</IBMHeader>
-                    <IBMTitle>Front-End Web Developer</IBMTitle>
-                    <IBMDescription>{loremIpsum}</IBMDescription>
-                </IBMDescriptionWrapper>
-                <IBMImageWrapper>
-                    <IBMImage src={ibmImage}/>
-                </IBMImageWrapper>
-            </IBMContentWrapper>
-        </ExperienceContentWrapper>
+        <ContentContainer lightBg={lightBg} id={id}>
+            <ContentWrapper>
+                <InfoRow imgStart={imgStart}>
+                    <Column1>
+                        <TextWrapper>
+                            <TopLine>{topLine}</TopLine>
+                            <Heading lightText={lightText}>{headline}</Heading>
+                            <Subtitle darkText={darkText}>{description}</Subtitle>
+                            <LearnMore lightText={lightText}>Learn more &gt;&gt;</LearnMore>
+                        </TextWrapper>
+                    </Column1>
+                    <Column2>
+                        <ImageWrapper>
+                            <Image src={img} alt={alt}/>
+                        </ImageWrapper>
+                    </Column2>
+                </InfoRow>
+            </ContentWrapper>
+        </ContentContainer>
     )
 };
 

@@ -1,0 +1,47 @@
+export const homeObjOne = {
+    id: 'experiences',
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'IBM',
+    headline: 'Front-end Web Developer',
+    description: 'Developed the front end interface for IBM Business Automation Workflow Workplace to improve user experience.',
+    imgStart: false,
+    img: require('../images/ibm.png').default,
+    alt: "IBM",
+    dark: true,
+    primary: true,
+    darkText: false,
+}
+
+export const homeObjTwo = {
+    id: null,
+    lightBg: true,
+    lightText: false,
+    lightTextDesc: false,
+    topLine: 'Personal App',
+    headline: 'Playlistify',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    imgStart: true,
+    img: require('../images/ibm.png').default,
+    alt: "Playlistify",
+    dark: false,
+    primary: false,
+    darkText: true,
+}
+
+export const homeObjThree = {
+    id: null,
+    lightBg: false,
+    lightText: true,
+    lightTextDesc: true,
+    topLine: 'Personal App',
+    headline: 'DiscordAlerter',
+    description: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.',
+    imgStart: false,
+    img: require('../images/ibm.png').default,
+    alt: "IBM",
+    dark: true,
+    primary: true,
+    darkText: false,
+}

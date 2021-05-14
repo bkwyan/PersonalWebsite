@@ -8,7 +8,7 @@ export const HomeContainer = styled.div`
     justify-content: center;
     align-items: center;
     padding: 0 30px;
-    height: 800px;
+    height: 100vh;
     position: relative;
     z-index: 1;
 `
@@ -23,39 +23,42 @@ export const VideoContainer = styled.div`
     overflow: hidden;
 `
 export const VideoBackground = styled.video`
+    object-fit: cover;
 `
 
-export const HomeContentContainer = styled.div`
-    z-index: 3;
-    position: absolute;
-    padding: 8px 24px;
-    display: flex;
-    flex-direction: column;
-`
-
-export const ProfilePictureContainer = styled.div`
+export const ProfilePictureWrapper = styled.div`
+    position: relative;
+    right: 0;
 `
 
 export const ProfilePicture = styled.img`
     border-radius: 50%;
     overflow: hidden;
     border: 2px solid white;
-    width: 50vmin;
-`
-
-export const NameContainer = styled.div`
+    width: 30vmin;
 `
 
 export const Name = styled.p`
-    margin: 20px;
+    font-family: 'Roboto';
+    margin: 20px 20px 0px 20px;
     color: ${colors.mikadoYellow};
-    font-size: ${fontSizes.xxxl};
-`
-
-export const DescriptionContainer = styled.div`
+    font-size: 48px;
 `
 
 export const Description = styled.p`
+    margin: 0px 20px 20px 20px;
     color: ${colors.snow};
-    font-size: ${fontSizes.xl};
+    font-size: 16px;
+`
+
+export const Blurb = styled.p`
+    font-size: 18px;
+    margin: 20px;
+    color:${colors.snow};
+    width:500px;
+`
+
+export const ContentWrapper = styled.div`
+    z-index: 3;
+    padding: 8px 24px;
 `

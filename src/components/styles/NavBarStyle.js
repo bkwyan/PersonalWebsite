@@ -3,15 +3,17 @@ import theme from './theme.js';
 import { Link as LinkS } from 'react-scroll';
 
 export const Nav = styled.nav`
+    font-family: 'Europa';
+    background: #1c1c1c;
     height: 80px;
-    // margin-top: -80px;
+    margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 1rem;
     position: sticky;
     top: 0;
-    z-index: 9999;
+    z-index: 999;
 `
 
 export const NavBarContainer = styled.div`
@@ -20,7 +22,7 @@ export const NavBarContainer = styled.div`
     height: 80px;
     z-index: 1;
     width: 100%;
-    padding 0 24px;
+    padding: 0 24px;
     max-width: 1100px;
 `
 

@@ -1,6 +1,7 @@
 const theme = {
     fonts: {
-        primary: 'Ciruclar Std, system, -apple-system, BlinkMacSystemFont, sans-serif',
+        primary: 'Europa',
+        secondary: 'Ciruclar Std, system, -apple-system, BlinkMacSystemFont, sans-serif',
     },
 
     colors: {
