@@ -44,6 +44,7 @@ export const TextWrapper = styled.div`
 `
 
 export const TopLine = styled.p`
+    font-family: 'Europa';
     color: #01bf71;
     font-size: 16px;
     line-height: 16px;
@@ -54,6 +55,7 @@ export const TopLine = styled.p`
 `
 
 export const Heading = styled.h1`
+    font-family: 'Roboto';
     margin-bottom: 24px;
     font-size: 48px;
     line-height: 1.1;
@@ -62,7 +64,7 @@ export const Heading = styled.h1`
 `
 
 export const Subtitle = styled.p`
-    font-family: 'Roboto';
+    font-family: 'PlayfairDisplay';
     max-width: 440px;
     margin-bottom: 35px;
     font-size: 18px;
@@ -71,6 +73,7 @@ export const Subtitle = styled.p`
 `
 
 export const LearnMore = styled.p`
+    font-family: 'Europa';
     font-weight: bold;
     transition: 0.20s ease-in-out;
     color: ${({lightText}) => (lightText ? '#f7f8fa' : '#010606')};

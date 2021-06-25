@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 import theme from './theme.js';
 import { Link as LinkS } from 'react-scroll';
+const { fontSizes, colors} = theme;
 
 export const Nav = styled.nav`
-    font-family: 'Europa';
-    background: #1c1c1c;
+    font-family: 'Lato';
+    background: ${colors.grayWeb};
     height: 80px;
-    margin-top: -80px;
+    //margin-top: -80px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -50,7 +51,7 @@ export const NavItem = styled.li`
 `
 
 export const NavLinks = styled(LinkS)`
-    color: #fff;
+    color: ${colors.mikadoYellow};
     display: flex;
     align-items: center;
     text-decoration: none;
